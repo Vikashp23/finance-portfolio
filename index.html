@@ -9,203 +9,239 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #0b0f14;
-  color: #fff;
+  background: #0f1720;
+  color: #e5e7eb;
 }
 
-header {
-  background: #121824;
+/* TOP BAR */
+.topbar {
+  background: #111827;
+  padding: 14px 20px;
+  font-weight: bold;
+  color: #20c997;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* LAYOUT */
+.container {
+  display: flex;
+  gap: 20px;
   padding: 20px;
-  text-align: center;
+  max-width: 1200px;
+  margin: auto;
 }
 
-h1 { color: #20c997; margin-bottom: 5px; }
-
-.section {
-  padding: 30px 20px;
-  text-align: center;
+/* SIDEBAR */
+.sidebar {
+  width: 280px;
+  background: #111827;
+  padding: 20px;
+  border-radius: 14px;
+  height: fit-content;
+  position: sticky;
+  top: 70px;
 }
 
+.name {
+  font-size: 22px;
+  font-weight: bold;
+  color: #20c997;
+}
+
+.role {
+  font-size: 14px;
+  color: #9ca3af;
+  margin-bottom: 10px;
+}
+
+.info {
+  font-size: 13px;
+  color: #d1d5db;
+  margin: 5px 0;
+}
+
+/* BUTTONS */
+.btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #20c997;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #000;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* FEED */
+.feed {
+  flex: 1;
+}
+
+/* CARD */
 .card {
-  background: #151e2d;
-  margin: 10px auto;
-  padding: 20px;
-  border-radius: 12px;
-  max-width: 900px;
-  text-align: left;
+  background: #111827;
+  padding: 18px;
+  border-radius: 14px;
+  margin-bottom: 15px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+/* HEADINGS */
+h2 {
+  color: #20c997;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
-.btn {
-  padding: 10px 15px;
-  background: #20c997;
-  border: none;
-  border-radius: 8px;
-  color: #000;
-  font-weight: bold;
-  cursor: pointer;
-  margin-top: 10px;
+.skill {
+  background: #1f2937;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 13px;
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #121824;
+/* EXPERIENCE */
+.job-title {
+  font-weight: bold;
+  color: #fff;
 }
-ul { margin: 0; padding-left: 20px; }
-h2 { color: #20c997; }
-.highlight { color: #20c997; font-weight: bold; }
+
+.company {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+ul {
+  padding-left: 18px;
+  color: #d1d5db;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    position: relative;
+  }
+}
 </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Vikash Pathak</h1>
-  <p>Senior Accounts Executive | Finance & MIS Specialist</p>
-  <p>Bengaluru, Karnataka | 📞 7488356129 | ✉ email.vikashpathak@gmail.com</p>
-</header>
+<div class="topbar">
+  💼 Vikash Pathak | Finance & Accounts Portfolio
+</div>
 
-<!-- ABOUT -->
-<section class="section">
-  <h2>Professional Summary</h2>
-  <div class="card">
-    Senior Accounts Executive with 6+ years of experience in end-to-end accounting and high-volume reconciliations.  
-    Expertise in bank, vendor, customer, and payment gateway reconciliation with strong focus on accuracy and financial control.  
-    Experienced in books of accounts, MIS reporting, and month-end closing activities.  
-    Strong knowledge of <span class="highlight">Tally Prime</span> and Advanced Excel.
-  </div>
-</section>
+<div class="container">
 
-<!-- SKILLS -->
-<section class="section">
-  <h2>Core Skills</h2>
-  <div class="grid">
-    <div class="card">📊 End-to-End Accounting</div>
-    <div class="card">🏦 Bank Reconciliation</div>
-    <div class="card">📑 Vendor & Customer Reconciliation</div>
-    <div class="card">💳 Payment Gateway Reconciliation</div>
-    <div class="card">📈 MIS Reporting</div>
-    <div class="card">📉 Month-End Closing</div>
-    <div class="card">📊 Advanced Excel (Pivot, VLOOKUP)</div>
-    <div class="card">🧾 Tally Prime</div>
-  </div>
-</section>
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="name">Vikash Pathak</div>
+    <div class="role">Senior Accounts Executive</div>
 
-<!-- EXPERIENCE -->
-<section class="section">
-  <h2>Work Experience</h2>
+    <div class="info">📍 Bengaluru, Karnataka</div>
+    <div class="info">📞 +91 7488356129</div>
+    <div class="info">✉ email.vikashpathak@gmail.com</div>
 
-  <div class="card">
-    <h3>Senior Accounts Executive</h3>
-    <p><strong>Ebix Travels Pvt. Ltd. (Via.com), Bengaluru</strong> | Jan 2020 – Present</p>
-    <ul>
-      <li>Managing end-to-end accounting activities for assigned processes</li>
-      <li>Performing high-volume bank, vendor, customer & payment reconciliations</li>
-      <li>Maintaining books of accounts and ensuring data accuracy</li>
-      <li>Preparing cash analysis sheets for multiple bank accounts</li>
-      <li>Coordinating with internal teams for discrepancy resolution</li>
-    </ul>
+    <a href="Vikash_Pathak_Resume.pdf" download>
+      <button class="btn">⬇ Download CV (PDF)</button>
+    </a>
+
+    <button class="btn" onclick="contact()">💬 WhatsApp Contact</button>
   </div>
 
-  <div class="card">
-    <h3>Compliance & Accounts Executive</h3>
-    <p><strong>CS Kant Sanat & Associates</strong> | Aug 2018 – Jan 2020</p>
-    <ul>
-      <li>Supported MCA statutory compliance activities</li>
-      <li>Maintained client compliance records and documentation</li>
-      <li>Assisted in basic accounting and reporting work</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>Assistant Auditor</h3>
-    <p><strong>A.K. Sinha & Co.</strong> | Apr 2018 – Jul 2018</p>
-    <ul>
-      <li>Assisted in statutory audits and financial verification</li>
-      <li>Verified invoices, vouchers and ledger balances</li>
-      <li>Supported audit documentation and reporting</li>
-    </ul>
-  </div>
-</section>
-
-<!-- EDUCATION -->
-<section class="section">
-  <h2>Education</h2>
-  <div class="card">
-    <ul>
-      <li>M.Com – IGNOU</li>
-      <li>BBM (Hons) – Magadh University</li>
-    </ul>
-  </div>
-</section>
-
-<!-- CERTIFICATIONS -->
-<section class="section">
-  <h2>Certifications</h2>
-  <div class="card">
-    <ul>
-      <li>Tax Pro Professional Course – Itaa Education</li>
-      <li>Diploma in Applied Finance & Accounts – NIIT</li>
-    </ul>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section class="section">
-  <h2>Digital Projects</h2>
-  <div class="grid">
+  <!-- MAIN FEED -->
+  <div class="feed">
 
     <div class="card">
-      🚚 DoorDrop <br>
-      <button class="btn" onclick="openDoor()">View</button>
+      <h2>Professional Summary</h2>
+      Senior Accounts Executive with 6+ years of experience in accounting operations, reconciliations, MIS reporting, and financial control.  
+      Strong expertise in bank, vendor, customer, and payment gateway reconciliation with high accuracy and reporting discipline.
     </div>
 
     <div class="card">
-      🍱 TasteHub <br>
-      <button class="btn" onclick="openTaste()">View</button>
+      <h2>Core Skills</h2>
+      <div class="skills">
+        <div class="skill">End-to-End Accounting</div>
+        <div class="skill">Bank Reconciliation</div>
+        <div class="skill">Vendor Reconciliation</div>
+        <div class="skill">Customer Reconciliation</div>
+        <div class="skill">Payment Gateway</div>
+        <div class="skill">MIS Reporting</div>
+        <div class="skill">Month-End Closing</div>
+        <div class="skill">Tally Prime</div>
+        <div class="skill">Advanced Excel</div>
+      </div>
     </div>
 
     <div class="card">
-      💼 DigiCafe <br>
-      <button class="btn" onclick="openCafe()">View</button>
+      <h2>Work Experience</h2>
+
+      <div class="job-title">Senior Accounts Executive</div>
+      <div class="company">Ebix Travels Pvt. Ltd. (Via.com) | Jan 2020 – Present</div>
+      <ul>
+        <li>Managed end-to-end accounting operations</li>
+        <li>Handled high-volume reconciliations (bank, vendor, customer)</li>
+        <li>Maintained books of accounts with accuracy</li>
+        <li>Prepared cash analysis and financial reports</li>
+        <li>Coordinated with teams for discrepancy resolution</li>
+      </ul>
+
+      <br>
+
+      <div class="job-title">Compliance & Accounts Executive</div>
+      <div class="company">CS Kant Sanat & Associates | Aug 2018 – Jan 2020</div>
+      <ul>
+        <li>Handled MCA compliance documentation</li>
+        <li>Supported accounting and reporting work</li>
+      </ul>
+
+      <br>
+
+      <div class="job-title">Assistant Auditor</div>
+      <div class="company">A.K. Sinha & Co. | Apr 2018 – Jul 2018</div>
+      <ul>
+        <li>Assisted in statutory audits</li>
+        <li>Verified invoices, vouchers, and ledgers</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Education</h2>
+      <ul>
+        <li>M.Com – IGNOU</li>
+        <li>BBM (Hons) – Magadh University</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Tax Pro Professional Course – ITAA Education</li>
+        <li>Diploma in Finance & Accounts – NIIT</li>
+      </ul>
     </div>
 
   </div>
-</section>
-
-<!-- CONTACT -->
-<section class="section">
-  <h2>Contact</h2>
-  <div class="card">
-    📞 7488356129 <br>
-    ✉ email.vikashpathak@gmail.com <br><br>
-    <button class="btn" onclick="contact()">Contact on WhatsApp</button>
-  </div>
-</section>
-
-<footer>
-  © Vikash Pathak | Finance Portfolio
-</footer>
+</div>
 
 <script>
-function openDoor() {
-  window.open("https://vikashp23.github.io/Doordrop/");
-}
-
-function openTaste() {
-  window.open("https://vikashp23.github.io/tastehub-website/");
-}
-
-function openCafe() {
-  window.open("https://vikashp23.github.io/digicafe/");
-}
-
 function contact() {
   window.open("https://wa.me/91748356129");
 }
