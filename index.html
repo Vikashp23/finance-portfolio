@@ -1,251 +1,1473 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vikash Pathak | Finance Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vikash Pathak | Senior Accounts Executive & Reconciliation Specialist</title>
+  
+  <meta name="description" content="Professional portfolio of Vikash Pathak, Senior Accounts Executive in Bengaluru. Specializing in R2R, O2C, Bank Reconciliation, AP, AR, MIS Reporting, and Advanced Excel with 8+ years experience.">
+  <meta name="keywords" content="Senior Accounts Executive Bengaluru, R2R Analyst, O2C Analyst, Bank Reconciliation Specialist, Accounts Payable, Accounts Receivable, Finance Executive, MIS Reporting, Advanced Excel, GST, TDS, Vikash Pathak">
+  <meta name="author" content="Vikash Pathak">
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0f1720;
-  color: #e5e7eb;
-}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-/* TOP BAR */
-.topbar {
-  background: #111827;
-  padding: 14px 20px;
-  font-weight: bold;
-  color: #20c997;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
+  <style>
+    :root {
+      --bg-main: #f8fafc;
+      --bg-card: #ffffff;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --primary: #1e3a8a; /* Deep Corporate Blue */
+      --secondary: #0ea5e9; /* Sky Blue */
+      --accent: #0d9488; /* Teal */
+      --border: #e2e8f0;
+      --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+      --shadow-md: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+      --radius: 12px;
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-/* LAYOUT */
-.container {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
-  max-width: 1200px;
-  margin: auto;
-}
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-/* SIDEBAR */
-.sidebar {
-  width: 280px;
-  background: #111827;
-  padding: 20px;
-  border-radius: 14px;
-  height: fit-content;
-  position: sticky;
-  top: 70px;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-.name {
-  font-size: 22px;
-  font-weight: bold;
-  color: #20c997;
-}
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
 
-.role {
-  font-size: 14px;
-  color: #9ca3af;
-  margin-bottom: 10px;
-}
+    /* UTILITIES & LAYOUT */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
 
-.info {
-  font-size: 13px;
-  color: #d1d5db;
-  margin: 5px 0;
-}
+    section {
+      padding: 80px 0;
+      border-bottom: 1px solid var(--border);
+    }
 
-/* BUTTONS */
-.btn {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  background: #20c997;
-  border: none;
-  border-radius: 10px;
-  font-weight: bold;
-  cursor: pointer;
-  color: #000;
-}
+    .section-title {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 12px;
+      position: relative;
+      display: inline-block;
+    }
 
-.btn:hover {
-  opacity: 0.9;
-}
+    .section-subtitle {
+      font-size: 16px;
+      color: var(--text-muted);
+      margin-bottom: 40px;
+    }
 
-/* FEED */
-.feed {
-  flex: 1;
-}
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 12px;
+      background-color: #e0f2fe;
+      color: #0369a1;
+      font-size: 13px;
+      font-weight: 500;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
 
-/* CARD */
-.card {
-  background: #111827;
-  padding: 18px;
-  border-radius: 14px;
-  margin-bottom: 15px;
-}
+    /* NAVIGATION */
+    nav {
+      background-color: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      padding: 16px 0;
+      transition: var(--transition);
+    }
 
-/* HEADINGS */
-h2 {
-  color: #20c997;
-  font-size: 18px;
-  margin-bottom: 10px;
-}
+    nav .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-/* SKILLS */
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
+    .logo {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+    }
 
-.skill {
-  background: #1f2937;
-  padding: 7px 12px;
-  border-radius: 20px;
-  font-size: 13px;
-}
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
 
-/* EXPERIENCE */
-.job-title {
-  font-weight: bold;
-  color: #fff;
-}
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-main);
+      font-weight: 500;
+      font-size: 15px;
+      transition: var(--transition);
+    }
 
-.company {
-  font-size: 13px;
-  color: #9ca3af;
-}
+    .nav-links a:hover {
+      color: var(--secondary);
+    }
 
-ul {
-  padding-left: 18px;
-  color: #d1d5db;
-}
+    /* HERO SECTION */
+    .hero {
+      background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+      padding: 100px 0 80px 0;
+      overflow: hidden;
+    }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .container {
-    flex-direction: column;
-  }
-  .sidebar {
-    width: 100%;
-    position: relative;
-  }
-}
-</style>
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    .hero-tagline {
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--secondary);
+      margin-bottom: 20px;
+    }
+
+    .hero-desc {
+      font-size: 16px;
+      color: var(--text-muted);
+      margin-bottom: 30px;
+      max-width: 600px;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 35px;
+      font-size: 14px;
+      color: var(--text-main);
+    }
+
+    .hero-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: var(--radius);
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      text-decoration: none;
+      border: none;
+    }
+
+    .btn-primary {
+      background-color: var(--primary);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background-color: #172554;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background-color: white;
+      color: var(--text-main);
+      border: 1px solid var(--border);
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--bg-main);
+      border-color: #cbd5e1;
+      transform: translateY(-2px);
+    }
+
+    .btn-icon {
+      padding: 12px;
+      border-radius: var(--radius);
+      background-color: white;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+    }
+
+    .btn-icon:hover {
+      color: var(--primary);
+      border-color: var(--secondary);
+      transform: translateY(-2px);
+    }
+
+    /* AVATAR CONTAINER */
+    .hero-avatar-zone {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .avatar-card {
+      background: white;
+      padding: 24px;
+      border-radius: 24px;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border);
+      text-align: center;
+      width: 100%;
+      max-width: 340px;
+    }
+
+    .avatar-placeholder {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
+      margin: 0 auto 20px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      border: 4px solid white;
+      box-shadow: var(--shadow);
+    }
+
+    /* STATS BAR */
+    .stats-bar {
+      background: white;
+      border-bottom: 1px solid var(--border);
+      padding: 40px 0;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      text-align: center;
+    }
+
+    .stat-item h3 {
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .stat-item p {
+      font-size: 14px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    /* ABOUT / JOURNEY ROADMAP */
+    .about-box {
+      background: white;
+      border-radius: var(--radius);
+      padding: 32px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      margin-bottom: 40px;
+    }
+
+    .journey-roadmap {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      position: relative;
+      margin-top: 24px;
+    }
+
+    .journey-step {
+      background: var(--bg-main);
+      padding: 20px;
+      border-radius: var(--radius);
+      border-top: 4px solid var(--border);
+      transition: var(--transition);
+    }
+
+    .journey-step.active {
+      border-top-color: var(--secondary);
+      background: #f0fdfa;
+    }
+
+    .journey-step h4 {
+      font-size: 15px;
+      color: var(--primary);
+      margin-bottom: 4px;
+    }
+
+    .journey-step p {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* SKILLS CARDS */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .skill-card {
+      background: white;
+      padding: 20px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: var(--transition);
+    }
+
+    .skill-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--secondary);
+    }
+
+    .skill-icon-wrapper {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      background-color: #f0f9ff;
+      color: var(--secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .skill-card h3 {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    /* TIMELINE */
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 20px;
+      top: 0;
+      width: 2px;
+      height: 100%;
+      background: var(--border);
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-left: 54px;
+      margin-bottom: 40px;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: 11px;
+      top: 4px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: white;
+      border: 4px solid var(--primary);
+      z-index: 2;
+    }
+
+    .timeline-item:first-child .timeline-dot {
+      border-color: var(--accent);
+    }
+
+    .timeline-content {
+      background: white;
+      padding: 24px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    .timeline-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .job-role {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .job-company {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .job-date {
+      font-size: 13px;
+      background: var(--bg-main);
+      padding: 4px 10px;
+      border-radius: 12px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .timeline-content ul {
+      list-style-type: none;
+    }
+
+    .timeline-content li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+      font-size: 14px;
+      color: #334155;
+    }
+
+    .timeline-content li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    /* PRACTICAL FINANCE HUB */
+    .hub-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .hub-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition);
+    }
+
+    .hub-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+      border-color: var(--accent);
+    }
+
+    .hub-card h3 {
+      font-size: 16px;
+      color: var(--primary);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .hub-card p {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+
+    .hub-action {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    /* AI PROJECTS */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition);
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .project-img-placeholder {
+      height: 180px;
+      background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 500;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+    }
+
+    .project-img-placeholder svg {
+      margin-bottom: 8px;
+      color: var(--secondary);
+    }
+
+    .project-body {
+      padding: 24px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .project-title {
+      font-size: 18px;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .project-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    .project-links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    /* LEARNING & CERTIFICATIONS */
+    .edu-cert-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+
+    .cert-list, .learning-tags {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .cert-item {
+      background: white;
+      padding: 16px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .cert-icon {
+      color: #eab308;
+    }
+
+    .cert-info h4 {
+      font-size: 15px;
+      color: var(--text-main);
+    }
+
+    .cert-info p {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .tags-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag-item {
+      background: #f0fdfa;
+      border: 1px solid #ccfbf1;
+      color: #0f766e;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    /* RECRUITER / WHY HIRE ME */
+    .hire-me-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .hire-card {
+      background: white;
+      padding: 28px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    .hire-card-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #f0fdf4;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px auto;
+    }
+
+    .hire-card h3 {
+      font-size: 16px;
+      margin-bottom: 8px;
+      color: var(--primary);
+    }
+
+    .hire-card p {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* CONTACT & FOOTER */
+    .contact-wrapper {
+      background: white;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-md);
+      padding: 40px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .contact-info-list {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .contact-icon-box {
+      width: 44px;
+      height: 44px;
+      background: var(--bg-main);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+    }
+
+    .contact-text label {
+      display: block;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-muted);
+    }
+
+    .contact-text p, .contact-text a {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-main);
+      text-decoration: none;
+    }
+
+    .contact-text a:hover {
+      color: var(--secondary);
+    }
+
+    .counter-widget {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      padding: 16px;
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 14px;
+    }
+
+    .counter-number {
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      padding: 24px 0;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    /* NOTIFICATION TOAST */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #0f172a;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: var(--transition);
+      z-index: 2000;
+    }
+
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 968px) {
+      .hero-grid, .edu-cert-grid, .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-avatar-zone {
+        order: -1;
+      }
+      .journey-roadmap {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .hire-me-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .journey-roadmap, .stats-grid {
+        grid-template-columns: 1fr;
+      }
+      .nav-links {
+        display: none; /* Can be enhanced with a mobile toggle button if needed */
+      }
+      .hero-text h1 {
+        font-size: 34px;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<div class="topbar">
-  💼 Vikash Pathak | Finance & Accounts Portfolio
-</div>
-
-<div class="container">
-
-  <!-- SIDEBAR -->
-  <div class="sidebar">
-    <div class="name">Vikash Pathak</div>
-    <div class="role">Senior Accounts Executive</div>
-
-    <div class="info">📍 Bengaluru, Karnataka</div>
-    <div class="info">📞 +91 7488356129</div>
-    <div class="info">✉ email.vikashpathak@gmail.com</div>
-
-    <a href="Vikash_Pathak_Resume.pdf" download>
-      <button class="btn">⬇ Download CV (PDF)</button>
-    </a>
-
-    <button class="btn" onclick="contact()">💬 WhatsApp Contact</button>
+  <div id="toast" class="toast">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+    <span id="toast-msg">Resume download tracked successfully!</span>
   </div>
 
-  <!-- MAIN FEED -->
-  <div class="feed">
-
-    <div class="card">
-      <h2>Professional Summary</h2>
-      Senior Accounts Executive with 6+ years of experience in accounting operations, reconciliations, MIS reporting, and financial control.  
-      Strong expertise in bank, vendor, customer, and payment gateway reconciliation with high accuracy and reporting discipline.
+  <nav>
+    <div class="container">
+      <a href="#" class="logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2"></rect><line x1="2" x2="22" y1="10" y2="10"></line></svg>
+        Vikash Pathak
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#finance-hub">Finance Hub</a></li>
+        <li><a href="#ai-projects">AI Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <div class="card">
-      <h2>Core Skills</h2>
-      <div class="skills">
-        <div class="skill">End-to-End Accounting</div>
-        <div class="skill">Bank Reconciliation</div>
-        <div class="skill">Vendor Reconciliation</div>
-        <div class="skill">Customer Reconciliation</div>
-        <div class="skill">Payment Gateway</div>
-        <div class="skill">MIS Reporting</div>
-        <div class="skill">Month-End Closing</div>
-        <div class="skill">Tally Prime</div>
-        <div class="skill">Advanced Excel</div>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <div class="badge">Open to Opportunities</div>
+          <h1>Vikash Pathak</h1>
+          <div class="hero-tagline">Senior Accounts Executive & Reconciliation Specialist</div>
+          <p class="hero-desc">
+            An accounting and operational finance professional with over 8 years of experience building scalable reconciliation pipelines, protecting margin integrity, and optimizing end-to-end ledger performance across corporate environments.
+          </p>
+          
+          <div class="hero-meta">
+            <div class="hero-meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              Bengaluru, KA, India
+            </div>
+            <div class="hero-meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+              Ebix Travels Pvt. Ltd. (Via.com)
+            </div>
+          </div>
+
+          <div class="btn-group">
+            <a href="#" class="btn btn-primary" onclick="trackDownload(event)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg>
+              Download CV
+            </a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            
+            <a href="https://www.linkedin.com/in/vikashpathak2306/" target="_blank" class="btn btn-icon" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="https://github.com/vikashp23" target="_blank" class="btn btn-icon" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-avatar-zone">
+          <div class="avatar-card">
+            <div class="avatar-placeholder">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </div>
+            <h2 style="font-size: 18px; margin-bottom: 4px;">Vikash Pathak</h2>
+            <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 12px;">Corporate Finance Professional</p>
+            <div style="font-size: 12px; font-weight: 600; color: var(--accent); background: #f0fdfa; padding: 4px 10px; border-radius: 12px; display: inline-block;">
+              Target: R2R / O2C / Analyst Roles
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </section>
 
-    <div class="card">
-      <h2>Work Experience</h2>
-
-      <div class="job-title">Senior Accounts Executive</div>
-      <div class="company">Ebix Travels Pvt. Ltd. (Via.com) | Jan 2020 – Present</div>
-      <ul>
-        <li>Managed end-to-end accounting operations</li>
-        <li>Handled high-volume reconciliations (bank, vendor, customer)</li>
-        <li>Maintained books of accounts with accuracy</li>
-        <li>Prepared cash analysis and financial reports</li>
-        <li>Coordinated with teams for discrepancy resolution</li>
-      </ul>
-
-      <br>
-
-      <div class="job-title">Compliance & Accounts Executive</div>
-      <div class="company">CS Kant Sanat & Associates | Aug 2018 – Jan 2020</div>
-      <ul>
-        <li>Handled MCA compliance documentation</li>
-        <li>Supported accounting and reporting work</li>
-      </ul>
-
-      <br>
-
-      <div class="job-title">Assistant Auditor</div>
-      <div class="company">A.K. Sinha & Co. | Apr 2018 – Jul 2018</div>
-      <ul>
-        <li>Assisted in statutory audits</li>
-        <li>Verified invoices, vouchers, and ledgers</li>
-      </ul>
+  <section class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <h3>8+</h3>
+          <p>Years Corporate Experience</p>
+        </div>
+        <div class="stat-item">
+          <h3>5,000+</h3>
+          <p>Reconciliations Managed</p>
+        </div>
+        <div class="stat-item">
+          <h3>10,000+</h3>
+          <p>Transactions Audited</p>
+        </div>
+        <div class="stat-item">
+          <h3>3</h3>
+          <p>AI Portfolio Projects Built</p>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-      <h2>Education</h2>
-      <ul>
-        <li>M.Com – IGNOU</li>
-        <li>BBM (Hons) – Magadh University</li>
-      </ul>
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">Professional Journey</h2>
+      <p class="section-subtitle">How my background built an ironclad baseline for enterprise account health.</p>
+      
+      <div class="about-box">
+        <p style="font-size: 16px; margin-bottom: 16px;">
+          I look at data through a multi-dimensional financial lens. Beginning my career in Core Audit taught me exactly how discrepancies form at the root level. Moving to Compliance sharpened my structural knowledge of corporate regulatory frameworks, which naturally evolved into high-volume ledger balance ownership and transactional reconciliation work.
+        </p>
+        <p style="font-size: 16px;">
+          Today, I mix traditional balance-matching discipline with modern technical workflows, utilizing advanced data structures, automated scripts, and AI-driven platforms to streamline variance resolution and support month-end closures.
+        </p>
+
+        <div class="journey-roadmap">
+          <div class="journey-step">
+            <h4>1. Core Audit</h4>
+            <p>Root voucher validation and transactional tracing.</p>
+          </div>
+          <div class="journey-step">
+            <h4>2. Compliance</h4>
+            <p>Regulatory frameworks, structural legal processing.</p>
+          </div>
+          <div class="journey-step">
+            <h4>3. Core Accounts</h4>
+            <p>Ledger integrity, operational control, AP/AR systems.</p>
+          </div>
+          <div class="journey-step active">
+            <h4>4. Reconciliation</h4>
+            <p>High-volume variance matching & payment pipelines.</p>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-      <h2>Certifications</h2>
-      <ul>
-        <li>Tax Pro Professional Course – ITAA Education</li>
-        <li>Diploma in Finance & Accounts – NIIT</li>
-      </ul>
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Core Competencies</h2>
+      <p class="section-subtitle">Technical skills and operational specialties under my management.</p>
+      
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon-wrapper">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+          </div>
+          <h3>General Accounting</h3>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon-wrapper">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7"></path><path d="M16 19h6M19 16v6"></path></svg>
+          </div>
+          <h3>Bank Reconciliation</h3>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon-wrapper">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <h3>Vendor Match</h3>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon-wrapper">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+          </div>
+          <h3>Customer Matching</h3>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon-wrapper">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="12" x="2" y="6" rx="2"></rect><circle cx="12" cy="12" r="2"></circle></svg>
+          </div>
+          <h3>Payment Gateways</h3>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon-wrapper">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><line x1="3" x2="21" y1="6" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          </div>
+          <h3>Accounts Payable</h3>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon-wrapper">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+          </div>
+          <h3>Accounts Receivable</h3>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon-wrapper">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" x2="8" y1="13" y2="13"></line><line x1="16" x2="8" y1="17" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          </div>
+          <h3>GST Compliance</h3>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon-wrapper">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 22V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v18l-6-4-6 4z"></path></svg>
+          </div>
+          <h3>TDS Support</h3>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon-wrapper">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"></path><path d="m19 9-5 5-4-4-3 3"></path></svg>
+          </div>
+          <h3>MIS Reporting</h3>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon-wrapper">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><line x1="3" x2="21" y1="9" y2="9"></line><line x1="3" x2="21" y1="15" y2="15"></line><line x1="9" x2="9" y1="3" y2="21"></line><line x1="15" x2="15" y1="3" y2="21"></line></svg>
+          </div>
+          <h3>Advanced Excel</h3>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon-wrapper">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m10 10 4 4M14 10l-4 4"></path></svg>
+          </div>
+          <h3>SAP Exposure</h3>
+        </div>
+      </div>
     </div>
+  </section>
 
-  </div>
-</div>
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title">Work Experience</h2>
+      <p class="section-subtitle">A historical look at my corporate milestones and core accounting ownership.</p>
+      
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <div class="job-role">Senior Accounts Executive</div>
+                <div class="job-company">Ebix Travels Pvt. Ltd. (Via.com)</div>
+              </div>
+              <div class="job-date">Jan 2020 – Present</div>
+            </div>
+            <ul>
+              <li>Owned high-volume bank, vendor, and customer account reconciliation pipelines, isolating processing leaks.</li>
+              <li>Validated daily multi-channel payment gateway balances alongside refund pipelines to keep settlement variances down.</li>
+              <li>Generated actionable end-of-month financial reports and cash-flow reviews for management visibility.</li>
+              <li>Coordinated across product groups and banking units to quickly identify and close transaction balance disparities.</li>
+            </ul>
+          </div>
+        </div>
 
-<script>
-function contact() {
-  window.open("https://wa.me/91748356129");
-}
-</script>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <div class="job-role">Accounts & Compliance Executive</div>
+                <div class="job-company">Kautilya Corporate Solutions</div>
+              </div>
+              <div class="job-date">Aug 2018 – Jan 2020</div>
+            </div>
+            <ul>
+              <li>Managed corporate registration filings and structural compliance reporting requirements under MCA frameworks.</li>
+              <li>Maintained essential daily client ledger entries, financial books, and regulatory schedules.</li>
+            </ul>
+          </div>
+        </div>
 
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <div class="job-role">Assistant Auditor</div>
+                <div class="job-company">A.K. Sinha & Co.</div>
+              </div>
+              <div class="job-date">Apr 2018 – Jul 2018</div>
+            </div>
+            <ul>
+              <li>Assisted in building comprehensive statutory financial audits across various small-to-medium enterprise accounts.</li>
+              <li>Verified purchase/sales vouchers, ledger balances, and expense distributions against bank statements.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="finance-hub">
+    <div class="container">
+      <h2 class="section-title">Practical Finance Learning Hub</h2>
+      <p class="section-subtitle">Functional architectures and tracking engines I use to secure balance sheet data integrity.</p>
+      
+      <div class="hub-grid">
+        <div class="hub-card">
+          <div>
+            <h3>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path></svg>
+              Bank Rec Tracker
+            </h3>
+            <p>Automated engine designed to isolate timing differences and outstanding transits between general ledger and bank books.</p>
+          </div>
+          <a href="#" class="hub-action" onclick="simulateDownload('Bank Reconciliation Tracker')">
+            <span>Download Component Model</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+
+        <div class="hub-card">
+          <div>
+            <h3>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path></svg>
+              Vendor Rec Sheet
+            </h3>
+            <p>Statement matching matrix created to cross-reference statements with external accounts payable sub-ledgers.</p>
+          </div>
+          <a href="#" class="hub-action" onclick="simulateDownload('Vendor Reconciliation Sheet')">
+            <span>Download Component Model</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+
+        <div class="hub-card">
+          <div>
+            <h3>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path></svg>
+              Customer Rec Sheet
+            </h3>
+            <p>Clearing workspace designed to align localized incoming receipts directly against outstanding trade receivables.</p>
+          </div>
+          <a href="#" class="hub-action" onclick="simulateDownload('Customer Reconciliation Sheet')">
+            <span>Download Component Model</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+
+        <div class="hub-card">
+          <div>
+            <h3>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="12" x="2" y="6" rx="2"></rect></svg>
+              Gateway Rec Engine
+            </h3>
+            <p>Automated layout to track merchant collections, chargebacks, processing holdbacks, and raw bank settlement net flows.</p>
+          </div>
+          <a href="#" class="hub-action" onclick="simulateDownload('Payment Gateway Reconciliation')">
+            <span>Download Component Model</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+
+        <div class="hub-card">
+          <div>
+            <h3>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path></svg>
+              AP Invoice Tracker
+            </h3>
+            <p>System tracking invoice verification dates, internal manager authorizations, and scheduled dispatch updates.</p>
+          </div>
+          <a href="#" class="hub-action" onclick="simulateDownload('AP Invoice Processing Tracker')">
+            <span>Download Component Model</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+
+        <div class="hub-card">
+          <div>
+            <h3>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"></path></svg>
+              AR Aging Report
+            </h3>
+            <p>Dynamic aging buckets grouping receivables by intervals to track bad debt risk levels and focus collections effort.</p>
+          </div>
+          <a href="#" class="hub-action" onclick="simulateDownload('AR Aging Report')">
+            <span>Download Component Model</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+
+        <div class="hub-card">
+          <div>
+            <h3>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path></svg>
+              GST Rec Workbook
+            </h3>
+            <p>Data validation file designed to cross-reference inward company ledger claims directly with GSTR purchase records.</p>
+          </div>
+          <a href="#" class="hub-action" onclick="simulateDownload('GST Reconciliation Workbook')">
+            <span>Download Component Model</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+
+        <div class="hub-card">
+          <div>
+            <h3>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"></rect></svg>
+              TDS Working Sheet
+            </h3>
+            <p>Structural engine built to check category compliance, calculate accurate deduction rates, and match balances to certificates.</p>
+          </div>
+          <a href="#" class="hub-action" onclick="simulateDownload('TDS Working Sheet')">
+            <span>Download Component Model</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ai-projects">
+    <div class="container">
+      <h2 class="section-title">AI & Technical Build Deployments</h2>
+      <p class="section-subtitle">Functional interfaces created using AI-assisted engineering to expand my modern finance background.</p>
+      
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-img-placeholder">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+            <span>DigiCafe Platform Interface</span>
+          </div>
+          <div class="project-body">
+            <div>
+              <h3 class="project-title">DigiCafe</h3>
+              <p class="project-desc">A structured operational service gateway providing direct tracking maps across GST, TDS, Income Tax returns, payroll processing, and statutory compliance frameworks.</p>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/vikashp23/digicafe" target="_blank" class="btn btn-secondary">Source Files</a>
+              <a href="https://vikashp23.github.io/digicafe/" target="_blank" class="btn btn-primary">Live Build</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img-placeholder">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            <span>TasteHub App Interface</span>
+          </div>
+          <div class="project-body">
+            <div>
+              <h3 class="project-title">TasteHub Portal</h3>
+              <p class="project-desc">A professional frontend design concept built to analyze modular client menus, fluid user interfaces, and online order processing funnels using modern layout patterns.</p>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/vikashp23/tastehub-website" target="_blank" class="btn btn-secondary">Source Files</a>
+              <a href="https://vikashp23.github.io/tastehub-website/" target="_blank" class="btn btn-primary">Live Build</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img-placeholder">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path></svg>
+            <span>EduMatch Platform Core</span>
+          </div>
+          <div class="project-body">
+            <div>
+              <h3 class="project-title">EduMatch</h3>
+              <p class="project-desc">An institutional learning directory conceptualized and assembled via AI prompt engineering frameworks, detailing clean profile matching structures and semantic layouts.</p>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/vikashp23/EduMatch" target="_blank" class="btn btn-secondary">Source Files</a>
+              <a href="https://vikashp23.github.io/EduMatch/" target="_blank" class="btn btn-primary">Live Build</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="container">
+      <div class="edu-cert-grid">
+        <div>
+          <h2 class="section-title">Credentials & Education</h2>
+          <p class="section-subtitle" style="margin-bottom: 24px;">Academic foundation and professional qualifications.</p>
+          <div class="cert-list">
+            <div class="cert-item">
+              <div class="cert-icon">🏆</div>
+              <div class="cert-info">
+                <h4>Tax Pro Professional Certification</h4>
+                <p>ITAA Education</p>
+              </div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-icon">📜</div>
+              <div class="cert-info">
+                <h4>Professional Diploma in Finance & Accounts</h4>
+                <p>NIIT</p>
+              </div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-icon">🎓</div>
+              <div class="cert-info">
+                <h4>Master of Commerce (M.Com)</h4>
+                <p>IGNOU</p>
+              </div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-icon">🎓</div>
+              <div class="cert-info">
+                <h4>Bachelor of Business Management (BBM Hons)</h4>
+                <p>Magadh University</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="section-title">Current Development Upgrades</h2>
+          <p class="section-subtitle" style="margin-bottom: 24px;">Active tooling pipelines I am acquiring to scale my target finance roles.</p>
+          <div class="tags-container">
+            <div class="tag-item">Power BI Dashboarding</div>
+            <div class="tag-item">SQL Ledger Interrogation</div>
+            <div class="tag-item">Advanced Excel VBA Automation</div>
+            <div class="tag-item">O2C Frameworks</div>
+            <div class="tag-item">R2R Global Analytics</div>
+            <div class="tag-item">AR Collections Management</div>
+            <div class="tag-item">AI Productivity for Finance</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why-hire-me" style="background-color: #f1f5f9;">
+    <div class="container">
+      <h2 class="section-title">Why Hire Me?</h2>
+      <p class="section-subtitle">A synthesis of operational value and professional approach for your open role.</p>
+      
+      <div class="hire-me-grid">
+        <div class="hire-card">
+          <div class="hire-card-icon">⚡</div>
+          <h3>8+ Years Experience</h3>
+          <p>An established history in core corporate structures, ensuring onboarding speed and reliable ledger autonomy.</p>
+        </div>
+        <div class="hire-card">
+          <div class="hire-card-icon">🎯</div>
+          <h3>Deep Reconciliations Specialty</h3>
+          <p>Extensive experience untangling payment gateways, vendor statement errors, and hidden banking fees.</p>
+        </div>
+        <div class="hire-card">
+          <div class="hire-card-icon">🤖</div>
+          <h3>Finance + AI Technical Mindset</h3>
+          <p>Equipped with prompt engineering and front-end experience to optimize legacy manual data parsing pipelines.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="border-bottom: none;">
+    <div class="container">
+      <h2 class="section-title" style="display: block; text-align: center; margin-bottom: 8px;">Initiate Business Contact</h2>
+      <p class="section-subtitle" style="display: block; text-align: center; margin-bottom: 48px;">Reach out directly for professional engagement or interviewing schedules.</p>
+      
+      <div class="contact-wrapper">
+        <div class="contact-grid">
+          <div class="contact-info-list">
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div class="contact-text">
+                <label>Direct Phone</label>
+                <p>+91 7488356129</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              </div>
+              <div class="contact-text">
+                <label>Corporate Email</label>
+                <a href="mailto:email.vikashpathak@gmail.com">email.vikashpathak@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </div>
+              <div class="contact-text">
+                <label>LinkedIn Network</label>
+                <a href="https://www.linkedin.com/in/vikashpathak2306/" target="_blank">linkedin.com/in/vikashpathak2306</a>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; justify-content: space-between; gap: 20px;">
+            <div>
+              <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 20px;">
+                Available for advanced placement opportunities across global capability centers (GCC), corporate travel networks, or e-commerce finance teams in Bangalore.
+              </p>
+              <button class="btn btn-primary" style="width: 100%; background-color: #25d366; color: white; justify-content: center;" onclick="window.open('https://wa.me/917488356129')">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                Connect via WhatsApp
+              </button>
+            </div>
+
+            <div class="counter-widget">
+              <span>Verified Profile Viewers:</span>
+              <span class="counter-number" id="visitor-count">1,248</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Vikash Pathak. All Rights Reserved. Built with Professional Finance Design Standards.</p>
+    </div>
+  </footer>
+
+  <script>
+    // SIMULATED VISITOR COUNTER
+    document.addEventListener("DOMContentLoaded", () => {
+      const baseCount = 1420;
+      const randomAddition = Math.floor(Math.random() * 85);
+      document.getElementById("visitor-count").innerText = (baseCount + randomAddition).toLocaleString();
+    });
+
+    // TOAST DISPLAY MANAGER
+    function showToast(message) {
+      const toast = document.getElementById("toast");
+      document.getElementById("toast-msg").innerText = message;
+      toast.classList.add("show");
+      setTimeout(() => {
+        toast.classList.remove("show");
+      }, 4000);
+    }
+
+    // TRACK RESUME EVENT
+    function trackDownload(e) {
+      e.preventDefault();
+      showToast("Resume download tracked! Opening file framework placeholder...");
+    }
+
+    // TRACK HUB DOWNLOAD SAMPLES
+    function simulateDownload(projectName) {
+      showToast(`Downloading: ${projectName} Blueprint Asset.`);
+    }
+  </script>
 </body>
 </html>
